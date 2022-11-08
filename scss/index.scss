@@ -1,0 +1,99 @@
+@import 'common/vars.scss';
+body{
+    .calc{
+        margin: 0 auto;
+        width: 500px;
+        height: 800px;
+        background-color: $bg;
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -4px 10px 70px  black;
+        .calc_out{
+            margin: 35px 0;
+            width: calc(100% - 40px);
+            height: 25%;
+            background-color: aliceblue;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end
+            ;
+            p{  
+                font-size: 90px;
+                text-align: right;
+                margin-right: 10px;
+            }
+
+        }
+        .calc_input{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: calc(100% - 60px);
+            button{
+                width: 90px;
+                height: 90px;
+                margin-bottom: 10px;
+                font-size: 23px;
+                border-radius: 100%;
+                border-color: black;
+
+            }
+            button:hover{
+                transition: all 0.2s;
+                
+                
+                transform: scale(0.9);         
+              }
+            .number{
+                color: $txt-col;
+            }
+            .operator, .deleteAll, .deleteLast, .percent{
+                color: $spec-col;
+            }
+            .color{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $col-theme
+                }
+            }
+        }
+    }
+    .calc.col{
+        background-color: #ffff;
+        .calc_out{
+            background-color: rgb(46, 45, 45);
+            p{
+                color: #ffff;
+            }
+
+        }
+        .calc_input{
+            button{
+                background-color: rgb(46, 45, 45);
+                color: #ffff;
+            }
+            .operator, .deleteAll, .deleteLast, .percent{
+                color: $spec-col 
+            }
+            .submit{
+                color: rgb(255, 255, 255) 
+            }
+            .color{
+                span{
+                    background-color: #ffff;
+                }
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,86 @@
+body .calc {
+  margin: 0 auto;
+  width: 500px;
+  height: 800px;
+  background-color: black;
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -4px 10px 70px black;
+}
+body .calc .calc_out {
+  margin: 35px 0;
+  width: calc(100% - 40px);
+  height: 25%;
+  background-color: aliceblue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body .calc .calc_out p {
+  font-size: 90px;
+  text-align: right;
+  margin-right: 10px;
+}
+body .calc .calc_input {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: calc(100% - 60px);
+}
+body .calc .calc_input button {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  border-radius: 100%;
+  border-color: black;
+}
+body .calc .calc_input button:hover {
+  transition: all 0.2s;
+  transform: scale(0.9);
+}
+body .calc .calc_input .number {
+  color: black;
+}
+body .calc .calc_input .operator, body .calc .calc_input .deleteAll, body .calc .calc_input .deleteLast, body .calc .calc_input .percent {
+  color: orangered;
+}
+body .calc .calc_input .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .calc .calc_input .color span {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+}
+body .calc.col {
+  background-color: white;
+}
+body .calc.col .calc_out {
+  background-color: rgb(46, 45, 45);
+}
+body .calc.col .calc_out p {
+  color: white;
+}
+body .calc.col .calc_input button {
+  background-color: rgb(46, 45, 45);
+  color: white;
+}
+body .calc.col .calc_input .operator, body .calc.col .calc_input .deleteAll, body .calc.col .calc_input .deleteLast, body .calc.col .calc_input .percent {
+  color: orangered;
+}
+body .calc.col .calc_input .submit {
+  color: rgb(255, 255, 255);
+}
+body .calc.col .calc_input .color span {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
