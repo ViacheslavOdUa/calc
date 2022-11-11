@@ -58,8 +58,8 @@ function subm(){
         answer = firstValue; 
         textOut.textContent = firstValue + operator
     }
-    
     firstValue = answer;
+    secondValue = ''
 }
 
 function clearLast(){
