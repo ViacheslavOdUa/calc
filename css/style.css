@@ -1,8 +1,4 @@
 @media (max-width: 767px) {
-  body .container {
-    width: 100vw;
-    height: 100vh;
-  }
   body .container .calc {
     width: 93vw;
     height: 95vh;
