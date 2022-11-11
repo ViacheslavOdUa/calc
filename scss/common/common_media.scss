@@ -5,6 +5,7 @@
                 width: 93vw;
                 height: 95vh;
                 .calc_input{
+                    width: calc(100% - 30px);
                     button{
                         width: 70px;
                         height: 70px;
