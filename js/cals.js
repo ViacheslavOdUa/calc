@@ -83,7 +83,6 @@ function clearLast(){
         content = content.slice(0, -1);
         textOut.textContent = content
         secondValue=secondValue.slice(0, -1);
-       
     }
 }
 function clearAll(){
