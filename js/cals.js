@@ -45,14 +45,23 @@ function subm(){
            textOut.textContent = answer
             break; 
         case '*':
-           answer = +firstValue * +secondValue;
-           textOut.textContent = answer
+           answer = (+firstValue) * (+secondValue);
+           textOut.textContent = parseFloat(answer.toFixed(4))
             break; 
         case '/':
            answer = +firstValue / +secondValue;
-           textOut.textContent = answer
-            break;      
+           textOut.textContent = parseFloat(answer.toFixed(4))
+            break;
+        case '%': 
+            answer = (+firstValue / 100) * (+secondValue);
+            textOut.textContent = answer;
     }
+    if( secondValue == ''){
+        answer = firstValue; 
+        textOut.textContent = firstValue + operator
+    }
+    
+    firstValue = answer;
 }
 
 function clearLast(){
