@@ -4,6 +4,9 @@ let clearL = document.querySelector('.deleteLast');
 let submit = document.querySelector('.submit')
 let color = document.querySelector('.color')
 let calc = document.querySelector('.calc')
+function aler(){
+    alert('вова пидорас');
+}
 function col(){
     calc.classList.toggle('col');
 }
@@ -98,3 +101,4 @@ clearA.onclick = clearAll;
 clearL.onclick = clearLast;
 submit.onclick = subm;
 color.onclick = col;
+aler()
