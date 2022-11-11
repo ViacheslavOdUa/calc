@@ -25,12 +25,10 @@ else if(event.target.classList.contains('operator')){
     textOut.textContent=firstValue + operator;
     j = true;
     secondValue = ''
-    console.log(firstValue, operator, secondValue)
 }else if(event.target.classList.contains('number') && j !== false){
     const num = event.target.textContent;
     secondValue+=num;
     textOut.textContent=firstValue + operator + secondValue;
-    console.log(firstValue, operator, secondValue)
 }
 }
 function subm(){
@@ -75,7 +73,6 @@ function clearLast(){
         textOut.textContent = content
         firstValue = firstValue.slice(0, -1);
         j = false;
-        console.log(firstValue, operator, secondValue)
     }
     else if(secondValue == "" && operator !== ''){
       operator = '';
@@ -96,7 +93,6 @@ function clearAll(){
     j = false;
     num = ''
     textOut.textContent = '0';
-    console.log(operator, secondValue, firstValue, j)
 }
 clearA.onclick = clearAll;
 clearL.onclick = clearLast;
