@@ -1,3 +1,13 @@
+@media (max-width: 767px) {
+  body .container .calc {
+    width: 93vw;
+    height: 95vh;
+  }
+  body .container .calc .calc_input button {
+    width: 70px;
+    height: 70px;
+  }
+}
 body .calc {
   margin: 0 auto;
   width: 500px;
